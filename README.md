@@ -19,7 +19,7 @@ Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gr
 
 ### Desinstalar
 
-Para desinstalar a modificação, na administração da loja, acesse o menu Extensions->Modifications (Extensões->Modificações) e selecione a modificação com o nome 'Adicionar url amigável no momento do cadastro ou edição', depois clique no botão Delete (Excluir), e no botão Refresh (Atualizar).
+Para desinstalar a modificação, na administração da loja, acesse o menu Extensions->Modifications (Extensões->Modificações) e selecione a modificação com o nome 'Adiciona a url amigável automaticamente no cadastro ou edição', depois clique no botão Delete (Excluir), e no botão Refresh (Atualizar).
 
 ### Utilização
 
