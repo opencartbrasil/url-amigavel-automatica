@@ -2,7 +2,7 @@
 <modification>
   <name>Adiciona a url amigável automaticamente no cadastro ou edição</name>
   <code>url-amigavel-automatica</code>
-  <version>1.1</version>
+  <version>1.2</version>
   <author>OpenCart Brasil</author>
   <link>http://www.opencartbrasil.com.br</link>
   <file path="admin/view/template/common/header.tpl">
@@ -71,9 +71,10 @@ $('input[name="category_description[<?php foreach ($languages as $language) { if
   </file>
   <file path="admin/view/template/catalog/information_form.tpl">
 	<operation>
-	  <search index="1"><![CDATA[//--></script>]]></search>
+	  <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
 	  <add position="before">
 			<![CDATA[
+<script type="text/javascript"><!--
 $('input[name="information_description[<?php foreach ($languages as $language) { if ($language_store == $language['code']) { echo $language['language_id']; } }; ?>][title]"]').stringToSlug({
   setEvents: 'keyup keydown blur',
   getPut: 'input[name="keyword"]',
@@ -81,15 +82,17 @@ $('input[name="information_description[<?php foreach ($languages as $language) {
   replace: '/\s?\([^\)]*\)/gi',
   AND: 'e'
 });
+//--></script>
 			]]>
 	  </add>
 	</operation>
   </file>
   <file path="admin/view/template/catalog/manufacturer_form.tpl">
 	<operation>
-	  <search index="1"><![CDATA[//--></script>]]></search>
+	  <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
 	  <add position="before">
 			<![CDATA[
+<script type="text/javascript"><!--
 $('input[name="name"]').stringToSlug({
   setEvents: 'keyup keydown blur',
   getPut: 'input[name="keyword"]',
@@ -97,6 +100,7 @@ $('input[name="name"]').stringToSlug({
   replace: '/\s?\([^\)]*\)/gi',
   AND: 'e'
 });
+//--></script>
 			]]>
 	  </add>
 	</operation>
