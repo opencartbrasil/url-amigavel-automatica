@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modification>
-  <name>Adiciona a url amigável automaticamente no cadastro ou edição</name>
+  <name>URL amigável automática</name>
   <code>url-amigavel-automatica</code>
-  <version>1.2</version>
+  <version>1.3</version>
   <author>OpenCart Brasil</author>
   <link>http://www.opencartbrasil.com.br</link>
   <file path="admin/view/template/common/header.tpl">
-	<operation>
-	  <search><![CDATA[</head>]]></search>
-	  <add position="before">
-			<![CDATA[<script type="text/javascript" src="view/javascript/stringToSlug/jquery.stringToSlug.min.js"></script>]]>
-	  </add>
-	</operation>
+    <operation>
+      <search><![CDATA[</head>]]></search>
+      <add position="before">
+            <![CDATA[<script type="text/javascript" src="view/javascript/stringToSlug/jquery.stringToSlug.min.js"></script>]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/controller/catalog/product.php">
-	<operation>
-	  <search><![CDATA[protected function getForm() {]]></search>
-	  <add position="after">
-			<![CDATA[		$data['language_store'] = $this->config->get('config_language');]]>
-	  </add>
-	</operation>
+    <operation>
+      <search><![CDATA[protected function getForm() {]]></search>
+      <add position="after">
+            <![CDATA[        $data['language_store'] = $this->config->get('config_language');]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/view/template/catalog/product_form.tpl">
-	<operation>
-	  <search index="1"><![CDATA[//--></script>]]></search>
-	  <add position="before">
-			<![CDATA[
+    <operation>
+      <search index="1"><![CDATA[//--></script>]]></search>
+      <add position="before">
+            <![CDATA[
 $('input[name="product_description[<?php foreach ($languages as $language) { if ( $language_store == $language['code']) { echo $language['language_id']; } }; ?>][name]"]').stringToSlug({
   setEvents: 'keyup keydown blur',
   getPut: 'input[name="keyword"]',
@@ -33,23 +33,23 @@ $('input[name="product_description[<?php foreach ($languages as $language) { if 
   replace: '/\s?\([^\)]*\)/gi',
   AND: 'e'
 });
-			]]>
-	  </add>
-	</operation>
+]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/controller/catalog/category.php">
-	<operation>
-	  <search><![CDATA[protected function getForm() {]]></search>
-	  <add position="after">
-			<![CDATA[		$data['language_store'] = $this->config->get('config_language');]]>
-	  </add>
-	</operation>
+    <operation>
+      <search><![CDATA[protected function getForm() {]]></search>
+      <add position="after">
+            <![CDATA[        $data['language_store'] = $this->config->get('config_language');]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/view/template/catalog/category_form.tpl">
-	<operation>
-	  <search index="1"><![CDATA[//--></script>]]></search>
-	  <add position="before">
-			<![CDATA[
+    <operation>
+      <search index="1"><![CDATA[//--></script>]]></search>
+      <add position="before">
+            <![CDATA[
 $('input[name="category_description[<?php foreach ($languages as $language) { if ($language_store == $language['code']) { echo $language['language_id']; } }; ?>][name]"]').stringToSlug({
   setEvents: 'keyup keydown blur',
   getPut: 'input[name="keyword"]',
@@ -57,23 +57,23 @@ $('input[name="category_description[<?php foreach ($languages as $language) { if
   replace: '/\s?\([^\)]*\)/gi',
   AND: 'e'
 });
-			]]>
-	  </add>
-	</operation>
+]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/controller/catalog/information.php">
-	<operation>
-	  <search><![CDATA[protected function getForm() {]]></search>
-	  <add position="after">
-			<![CDATA[		$data['language_store'] = $this->config->get('config_language');]]>
-	  </add>
-	</operation>
+    <operation>
+      <search><![CDATA[protected function getForm() {]]></search>
+      <add position="after">
+            <![CDATA[        $data['language_store'] = $this->config->get('config_language');]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/view/template/catalog/information_form.tpl">
-	<operation>
-	  <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
-	  <add position="before">
-			<![CDATA[
+    <operation>
+      <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
+      <add position="before">
+            <![CDATA[
 <script type="text/javascript"><!--
 $('input[name="information_description[<?php foreach ($languages as $language) { if ($language_store == $language['code']) { echo $language['language_id']; } }; ?>][title]"]').stringToSlug({
   setEvents: 'keyup keydown blur',
@@ -83,15 +83,15 @@ $('input[name="information_description[<?php foreach ($languages as $language) {
   AND: 'e'
 });
 //--></script>
-			]]>
-	  </add>
-	</operation>
+]]>
+      </add>
+    </operation>
   </file>
   <file path="admin/view/template/catalog/manufacturer_form.tpl">
-	<operation>
-	  <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
-	  <add position="before">
-			<![CDATA[
+    <operation>
+      <search index="0"><![CDATA[<?php echo $footer; ?>]]></search>
+      <add position="before">
+            <![CDATA[
 <script type="text/javascript"><!--
 $('input[name="name"]').stringToSlug({
   setEvents: 'keyup keydown blur',
@@ -101,8 +101,8 @@ $('input[name="name"]').stringToSlug({
   AND: 'e'
 });
 //--></script>
-			]]>
-	  </add>
-	</operation>
+]]>
+      </add>
+    </operation>
   </file>
 </modification>
