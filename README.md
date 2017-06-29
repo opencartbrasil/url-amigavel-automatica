@@ -1,6 +1,8 @@
-### Resumo
+[![license][licenca-badge]][LICENSE]
 
-Esta modificação foi desenvolvida no formato OCMod, e incrementa o preenchimento automático da URL amigável no momento do cadastro ou edição de produtos, departamentos, páginas de informações e marcas.
+### Apresentação
+
+Esta modificação foi desenvolvida no formato OCMOD, e incrementa o preenchimento automático da URL amigável no momento do cadastro ou edição de produtos, departamentos, páginas de informações e marcas.
 
 Uma das grandes vantagens desta modificação é que a URL amigável é gerada em tempo real, ou seja, no ato do preenchimento do cadastro ou edição.
 
@@ -14,17 +16,19 @@ Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gr
 
  1. Acesso o link: https://github.com/opencartbrasil/url-amigavel-automatica/releases.
  2. Localize a versão mais atual e compatível com sua versão do OpenCart, e faça o download do arquivo "url-amigavel-automatica.ocmod.zip".
- 3. Na administração da loja acesse o menu Extensions->Extension Installer (Extensões->Instalador).
+ 3. Na administração da loja acesse o menu Extensões→Instalador (Extensions→Installer).
  4. Na página do instalador, clique no botão Upload, selecione o arquivo 'url-amigavel-automatica.ocmod.zip' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
- 5. Após a instalação, acesse o menu Extensions->Modifications (Extensões->Modificações), clique no botão Refresh (Atualizar), para que a modificação instalada seja incrementada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul, ao lado do botão laranja e vermelho na tela do próprio OpenCart.
+ 5. Após a instalação, acesse o menu Extensões→Modificações (Extensions→Modifications), clique no botão Atualizar (Refresh), para que a modificação instalada seja adicionada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul, ao lado do botão laranja e vermelho na tela do próprio OpenCart.
 
 ### Utilização
 
-Após a instalação nenhuma outra configuração é necessária. Caso utilize mais de um idioma na loja, o idioma padrão da loja, será o idioma utilizado para gerar a URL amigável.
+Após a instalação nenhuma outra configuração é necessária.
+
+Caso utilize mais de um idioma na loja, o idioma padrão da loja será o idioma utilizado para gerar a URL amigável.
 
 ### Desinstalação
 
-Para desinstalar a modificação, na administração da loja, acesse o menu Extensions->Modifications (Extensões->Modificações), localize e selecione a modificação com o nome 'Adiciona a url amigável automaticamente no cadastro ou edição' ou 'URL amigável automática', depois clique no botão Delete (Excluir), e no botão Refresh (Atualizar).
+Para desinstalar a modificação, na administração da loja, acesse o menu Extensões→Modificações (Extensions→Modifications), localize e selecione a modificação com o nome 'Adiciona a url amigável automaticamente no cadastro ou edição' ou 'URL amigável automática', depois clique no botão Excluir (Delete), e no botão Atualizar (Refresh).
 
 ### Atualização
 
@@ -32,11 +36,11 @@ Acesse a administração da loja e execute o procedimento de Desinstalação, de
 
 ### Dúvidas
 
-O OCMod (OpenCart Modification) é nativo do OpenCart, ou seja, não é necessário instalar nenhum complemento no OpenCart para utilizar modificações ou extensões no formato OCMod, para mais informações sobre o OCMod, segue o link:
+O OCMOD (OpenCart Modification) é nativo do OpenCart, ou seja, não é necessário instalar nenhum complemento no OpenCart para utilizar modificações ou extensões no formato OCMOD, para mais informações sobre o OCMOD, segue o link para mais informações:
 
 https://github.com/opencart/opencart/wiki/Modification-System
 
-### Os arquivos alterados virtualmente através do OCMod são:
+### Os arquivos alterados virtualmente através do OCMOD são:
 
 admin/view/template/common/header.tpl
 
@@ -54,12 +58,5 @@ admin/view/template/catalog/information_form.tpl
 
 admin/view/template/catalog/manufacturer_form.tpl
 
-### Como contribuir
-
- 1. Faça um Fork do projeto e edite os arquivos que desejar.
- 2. Faça um Pull para que suas sugestões de melhorias sejam avaliadas e aceitas, caso aprovadas.
- 3. Abra uma Inssue com sua dúvida ou sugestão.
-
-### Licença
-
-[GNU General Public License version 3 (GPLv3)](https://github.com/opencartbrasil/url-amigavel-automatica/blob/master/LICENSE)
+[licenca-badge]: https://img.shields.io/badge/licença-GPLv3-blue.svg
+[LICENSE]: ./LICENSE
