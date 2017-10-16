@@ -40,23 +40,5 @@ O OCMOD (OpenCart Modification) é nativo do OpenCart, ou seja, não é necessá
 
 https://github.com/opencart/opencart/wiki/Modification-System
 
-### Os arquivos alterados virtualmente através do OCMOD são:
-
-admin/view/template/common/header.tpl
-
-admin/controller/catalog/product.php
-
-admin/view/template/catalog/product_form.tpl
-
-admin/controller/catalog/category.php
-
-admin/view/template/catalog/category_form.tpl
-
-admin/controller/catalog/information.php
-
-admin/view/template/catalog/information_form.tpl
-
-admin/view/template/catalog/manufacturer_form.tpl
-
 [licenca-badge]: https://img.shields.io/badge/licença-GPLv3-blue.svg
 [LICENSE]: ./LICENSE
