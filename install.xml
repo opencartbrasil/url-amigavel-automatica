@@ -2,14 +2,14 @@
 <modification>
   <name>URL amigável automática para OpenCart 3.0.x</name>
   <code>url-amigavel-automatica</code>
-  <version>3.0.0</version>
+  <version>3.0.1</version>
   <author>OpenCart Brasil</author>
   <link>http://www.opencartbrasil.com.br</link>
   <file path="admin/view/template/common/header.twig">
     <operation>
       <search><![CDATA[</head>]]></search>
       <add position="before"><![CDATA[
-        <script type="text/javascript" src="view/javascript/stringToSlug/jquery.stringToSlug.min.js"></script>
+        <script type="text/javascript" src="view/javascript/stringToSlug/jquery.stringtoslug.min.js"></script>
         <script type="text/javascript" src="view/javascript/stringToSlug/speakingurl.js"></script>
       ]]></add>
     </operation>
