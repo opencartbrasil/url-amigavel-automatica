@@ -8,14 +8,10 @@ Uma das grandes vantagens desta modificação é que a URL amigável é gerada e
 
 A URL amigável é gerada utilizando as melhores regras para sua composição, dispensando a preocupação de preenchimento e ajustes por parte do usuário final.
 
-Caso deseje doar um valor para contribuir com este trabalho continuo e sempre gratuito, clique no botão abaixo:
-
-[![alt tag](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7G9TR9PXS6G5J)
-
 ### Instalação
 
- 1. Acesso o link: https://github.com/opencartbrasil/url-amigavel-automatica/releases.
- 2. Localize a versão mais atual e compatível com sua versão do OpenCart, e faça o download do arquivo "url-amigavel-automatica.ocmod.zip".
+ 1. Acesso o link: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=22022.
+ 2. Localize a versão mais atual e compatível com sua versão do OpenCart e faça o download.
  3. Na administração da loja acesse o menu Extensões→Instalador (Extensions→Installer).
  4. Na página do instalador, clique no botão Upload, selecione o arquivo 'url-amigavel-automatica.ocmod.zip' (que você baixou deste repositório), e aguarde a conclusão da instalação automática.
  5. Após a instalação, acesse o menu Extensões→Modificações (Extensions→Modifications), clique no botão Atualizar (Refresh), para que a modificação instalada seja adicionada na loja, lembrando que não é o botão "Atualizar" do navegador, e sim o botão "Atualizar" na cor azul, ao lado do botão laranja e vermelho na tela do próprio OpenCart.
